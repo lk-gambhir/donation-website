@@ -82,25 +82,6 @@ python3 -m http.server 8000
 
 Open [http://localhost:8000](http://localhost:8000) in your browser.
 
-## Deployment
-
-This is a static site and can be deployed to any static hosting platform.
-
-### Netlify
-
-1. Go to [Netlify](https://app.netlify.com)
-2. Click **Add new site → Deploy manually**
-3. Drag and drop the `Donation-Website/public` folder
-4. Your site is live!
-
-### Netlify CLI
-
-```bash
-npm install -g netlify-cli
-netlify login
-netlify deploy --dir=Donation-Website/public --prod
-```
-
 ## Configuration
 
 To use your own Razorpay account, replace the payment button ID in `Donation.html`:
@@ -112,7 +93,3 @@ To use your own Razorpay account, replace the payment button ID in `Donation.htm
 ```
 
 You can generate a payment button ID from the [Razorpay Dashboard](https://dashboard.razorpay.com/app/payment-button).
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
